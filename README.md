@@ -1,99 +1,93 @@
-<p align="center">
-<img width="250" height="154" src="Docs/logoSU2small.png">
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p align="center" dir="auto">
+<a target="_blank" rel="noopener noreferrer" href="/su2code/SU2/blob/master/Docs/logoSU2small.png"><img width="250" height="154" src="/su2code/SU2/raw/master/Docs/logoSU2small.png" style="max-width: 100%;"></a>
 </p>
-
-
-# SU2 (ver. 8.0.0 "Harrier"): The Open-Source CFD Code
-
-Computational analysis tools have revolutionized the way we design engineering systems, but most established codes are proprietary, unavailable, or prohibitively expensive for many users. The SU2 team is changing this, making multiphysics analysis and design optimization freely available as open-source software and involving everyone in its creation and development.
-
-For an overview of the technical details in SU2, please see the following AIAA Journal article:
-
-"SU2: An open-source suite for multiphysics simulation and design," AIAA Journal, 54(3):828-846, 2016. <http://arc.aiaa.org/doi/10.2514/1.J053813>
-
-Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
-
-Continuous Integration:<br/>
-[![Regression Testing](https://github.com/su2code/SU2/workflows/Regression%20Testing/badge.svg?branch=develop)](https://github.com/su2code/SU2/actions)
-[![Release](https://github.com/su2code/SU2/workflows/Release%20Management/badge.svg?branch=develop)](https://github.com/su2code/SU2/actions)
-
-Code Quality:<br/>
-[![CodeFactor](https://www.codefactor.io/repository/github/su2code/su2/badge)](https://www.codefactor.io/repository/github/su2code/su2)
-
-# SU2 Introduction
-
-SU2 is a suite of open-source software tools written in C++ for the numerical solution of partial differential equations (PDE) and performing PDE constrained optimization.
-
-The primary applications are computational fluid dynamics and aerodynamic shape optimization, but has been extended to treat more general equations such as electrodynamics and chemically reacting flows.
-
-You will find more information and the latest news in:
-
-- SU2 Home Page: <https://su2code.github.io>
-- GitHub repository: <https://github.com/su2code>
-- CFD Online: <http://www.cfd-online.com/Forums/su2/>
-- Twitter: <https://twitter.com/su2code>
-- Facebook: <https://www.facebook.com/su2code>
-
-# SU2 Installation
-
-## Precompiled binaries for Linux, MacOS, Windows
-
-You can find precompiled binaries of the latest version on our [download page](https://su2code.github.io/download.html) or under [releases](https://github.com/su2code/SU2/releases).
-
-## Build SU2
-
-The build system of SU2 is based on a combination of [meson](http://mesonbuild.com/) (as the front-end) and [ninja](https://ninja-build.org/) (as the back-end). Meson is an open source build system meant to be both extremely fast, and, even more importantly, as user friendly as possible. Ninja is a small low-level build system with a focus on speed.
-
-Short summary of the minimal requirements:
-
-- C/C++ compiler
-- Python 3
-
-**Note:** all other necessary build tools and dependencies are shipped with the source code or are downloaded automatically.
-
-If you have these tools installed, you can create a configuration using the `meson.py` found in the root source code folder:
-
-```
-./meson.py build
-```
-
-Use `ninja` to compile and install the code
-
-```
-./ninja -C build install
-```
-
-For more information on how to install and build SU2 on Linux, MacOS or Windows, have a look at the [documentation](https://su2code.github.io/docs_v7/).
-
-## SU2 Path setup
-
-When installation is complete, please be sure to add the `$SU2_HOME` and `$SU2_RUN` environment variables, and update your `$PATH` with `$SU2_RUN`.
-
-For example, add these lines to your `.bashrc` file:
-
-```
-export SU2_RUN="your_prefix/bin"
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SU2（版本 8.0.1“Harrier”）：开源 CFD 代码</font></font></h1><a id="user-content-su2-ver-801-harrier-the-open-source-cfd-code" class="anchor" aria-label="永久链接：SU2（版本 8.0.1“Harrier”）：开源 CFD 代码" href="#su2-ver-801-harrier-the-open-source-cfd-code"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">计算分析工具彻底改变了我们设计工程系统的方式，但大多数已建立的代码都是专有的、不可用的，或者对许多用户来说昂贵得令人望而却步。 SU2 团队正在改变这一现状，将多物理场分析和设计优化作为开源软件免费提供，并让每个人都参与其创建和开发。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关 SU2 技术细节的概述，请参阅以下 AIAA 期刊文章：</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">“SU2：用于多物理场仿真和设计的开源套件”，AIAA Journal，54(3):828-846，2016。http: </font></font><a href="http://arc.aiaa.org/doi/10.2514/1.J053813" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">//arc.aiaa.org/doi/10.2514/1.J053813</font></font></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请注意，该项目是随</font></font><a href="/su2code/SU2/blob/master/CODE_OF_CONDUCT.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者行为准则</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一起发布的。参与该项目即表示您同意遵守其条款。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">持续集成：</font></font><br>
+<a href="https://github.com/su2code/SU2/actions"><img src="https://github.com/su2code/SU2/workflows/Regression%20Testing/badge.svg?branch=develop" alt="回归测试" style="max-width: 100%;"></a>
+<a href="https://github.com/su2code/SU2/actions"><img src="https://github.com/su2code/SU2/workflows/Release%20Management/badge.svg?branch=develop" alt="发布" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">代码质量：</font></font><br>
+<a href="https://www.codefactor.io/repository/github/su2code/su2" rel="nofollow"><img src="https://camo.githubusercontent.com/749f7fe786fa6975a0abda5b9f2bb138fb9538949a9447e2227c7e0dd95540cc/68747470733a2f2f7777772e636f6465666163746f722e696f2f7265706f7369746f72792f6769746875622f737532636f64652f7375322f6261646765" alt="代码因子" data-canonical-src="https://www.codefactor.io/repository/github/su2code/su2/badge" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SU2简介</font></font></h1><a id="user-content-su2-introduction" class="anchor" aria-label="永久链接：SU2简介" href="#su2-introduction"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SU2 是一套用 C++ 编写的开源软件工具，用于偏微分方程 (PDE) 的数值求解和执行 PDE 约束优化。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主要应用是计算流体动力学和空气动力学形状优化，但已扩展到处理更一般的方程，例如电动力学和化学反应流。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以在以下位置找到更多信息和最新消息：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SU2 主页： https: </font></font><a href="https://su2code.github.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">//su2code.github.io</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub 存储库：</font></font><a href="https://github.com/su2code"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://github.com/su2code</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">差价合约在线： http: </font></font><a href="http://www.cfd-online.com/Forums/su2/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">//www.cfd-online.com/Forums/su2/</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">推特：https: </font></font><a href="https://twitter.com/su2code" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">//twitter.com/su2code</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">脸书：https: </font></font><a href="https://www.facebook.com/su2code" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">//www.facebook.com/su2code</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SU2安装</font></font></h1><a id="user-content-su2-installation" class="anchor" aria-label="永久链接：SU2 安装" href="#su2-installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">适用于 Linux、MacOS、Windows 的预编译二进制文件</font></font></h2><a id="user-content-precompiled-binaries-for-linux-macos-windows" class="anchor" aria-label="永久链接：适用于 Linux、MacOS、Windows 的预编译二进制文件" href="#precompiled-binaries-for-linux-macos-windows"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://su2code.github.io/download.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以在我们的下载页面</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><a href="https://github.com/su2code/SU2/releases"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">releases</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下找到最新版本的预编译二进制文件</font><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建造SU2</font></font></h2><a id="user-content-build-su2" class="anchor" aria-label="永久链接：构建 SU2" href="#build-su2"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SU2的构建系统基于</font></font><a href="http://mesonbuild.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">介子</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（作为前端）和</font></font><a href="https://ninja-build.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">忍者</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（作为后端）的组合。 Meson 是一个开源构建系统，不仅速度极快，而且更重要的是，尽可能用户友好。 Ninja 是一个小型的低级构建系统，注重速度。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最低要求的简短摘要：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">C/C++编译器</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">蟒蛇3</font></font></li>
+</ul>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">所有其他必要的构建工具和依赖项都随源代码一起提供或自动下载。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果安装了这些工具，则可以使用</font></font><code>meson.py</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根源代码文件夹中的文件创建配置：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>./meson.py build
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="./meson.py build" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于</font></font><code>ninja</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编译和安装代码</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>./ninja -C build install
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="./ninja -C build install" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关如何在 Linux、MacOS 或 Windows 上安装和构建 SU2 的更多信息，请查看</font></font><a href="https://su2code.github.io/docs_v7/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SU2 路径设置</font></font></h2><a id="user-content-su2-path-setup" class="anchor" aria-label="永久链接：SU2 路径设置" href="#su2-path-setup"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装完成后，请务必添加</font></font><code>$SU2_HOME</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>$SU2_RUN</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">环境变量，并</font></font><code>$PATH</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font><code>$SU2_RUN</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例如，将这些行添加到您的</font></font><code>.bashrc</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件中：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>export SU2_RUN="your_prefix/bin"
 export SU2_HOME="/path/to/SU2vX.X.X/"
 export PATH=$PATH:$SU2_RUN
 export PYTHONPATH=$SU2_RUN:$PYTHONPATH
-```
-
-`$SU2_RUN` should point to the folder where all binaries and python scripts were installed. This is the prefix you set with the --prefix option to meson. Note that the bin/ directory is automatically added to your prefix path.
-
-`$SU2_HOME` should point to the root directory of the source code distribution, i.e., `/path/to/SU2vX.X.X/`.
-
-Thanks for building, and happy optimizing!
-
-- The SU2 Development Team
-
-# SU2 Developers
-
-We follow the popular "GitFlow" branching model for scalable development. In the SU2 repository, the master branch represents the latest stable major or minor release (7.0, 6.2.0, etc.), it should only be modified during version releases. Work that is staged for release is put into the develop branch via Pull Requests on GitHub from various "feature" branches where folks do their day-to-day work on the code. At release time, the work that has been merged into the develop branch is pushed to the master branch and tagged as a release.
-
-SU2 is being developed by individuals and organized teams all around the world.
-
-A list of current contributors can be found in the AUTHORS.md file.
-
-## Documentation
-
-Code documentation can be generated by calling doxygen from the root of the project, then open Docs/html/index.html in a browser to consult the documentation.
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="export SU2_RUN=&quot;your_prefix/bin&quot;
+export SU2_HOME=&quot;/path/to/SU2vX.X.X/&quot;
+export PATH=$PATH:$SU2_RUN
+export PYTHONPATH=$SU2_RUN:$PYTHONPATH" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><code>$SU2_RUN</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应指向安装所有二进制文件和 python 脚本的文件夹。这是您使用 --prefix 选项为介子设置的前缀。请注意，bin/ 目录会自动添加到您的前缀路径中。</font></font></p>
+<p dir="auto"><code>$SU2_HOME</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应指向源代码分发的根目录，即</font></font><code>/path/to/SU2vX.X.X/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">感谢您的构建，祝您优化愉快！</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SU2开发团队</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SU2 开发商</font></font></h1><a id="user-content-su2-developers" class="anchor" aria-label="永久链接：SU2 开发者" href="#su2-developers"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们遵循流行的“GitFlow”分支模型进行可扩展开发。在 SU2 存储库中，master 分支代表最新的稳定主要或次要版本（7.0、6.2.0 等），仅应在版本发布期间对其进行修改。准备发布的工作通过 GitHub 上的拉取请求从各种“功能”分支放入开发分支，人们在这些分支上进行日常代码工作。在发布时，已合并到开发分支的工作被推送到主分支并标记为发布。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SU2 是由世界各地的个人和有组织的团队开发的。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当前贡献者的列表可以在 AUTHORS.md 文件中找到。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></h2><a id="user-content-documentation" class="anchor" aria-label="永久链接：文档" href="#documentation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以通过从项目根目录调用 doxygen 来生成代码文档，然后在浏览器中打开 Docs/html/index.html 来查阅文档。</font></font></p>
+</article></div>
